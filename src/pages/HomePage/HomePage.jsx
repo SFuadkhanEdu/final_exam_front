@@ -8,6 +8,7 @@ import { HeroSection } from '../../components/HeroSection/HeroSection'
 import AboutUsSection from '../../components/AboutUsSection/AboutUsSection'
 import DevotedSection from '../../components/DevotedSection/DevotedSection'
 import "./index.css"
+import ContactUsSection from '../../components/ContactUsSection/ContactUsSection'
 function HomePage() {
     const [products, setProducts] = useState([])
     const [input, setInput] = useState([])
@@ -15,6 +16,11 @@ function HomePage() {
     const [isSortedZA, setIsSortedZA] = useState(false)
 
 
+    useEffect(() => {
+            fetch("http://localhost:3000/products")
+                .then(res => res.json())
+                .then(data => setProducts(data))
+    }, [])
     useEffect(() => {
         if (input) {
             return
@@ -45,6 +51,7 @@ function HomePage() {
             <HeroSection></HeroSection>
             <AboutUsSection></AboutUsSection>
             <DevotedSection></DevotedSection>
+            <ContactUsSection></ContactUsSection>
             <section>
                 <div className="home_operations_div">
                     <button onClick={() => sortAZ()}>A-Z</button>

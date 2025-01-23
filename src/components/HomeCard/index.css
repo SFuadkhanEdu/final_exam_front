@@ -9,7 +9,7 @@
     width: 100%;
     height: 100%;
 }
-.card button{
+.card .add_basket{
     padding: 16px 8px;
     background-color:aquamarine;
     border-radius: 50px;

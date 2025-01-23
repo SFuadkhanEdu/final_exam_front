@@ -13,8 +13,8 @@ function HomeCard({key, product }) {
         <div key={key} className="card">
             <img src={product.img} alt="" />
             <Link to={"/products/detail/"+product._id}><h3>{product.title}</h3></Link>
-            <p>{product.price}</p>
-            <button onClick={basketHandle}>add basket</button>
+            <p>${product.price}.00</p>
+            <button className='add_basket' onClick={basketHandle}>add basket</button>
             {isInWishlist(product) ? <i onClick={()=>addToWishlist(product)} class="fa-solid fa-heart"></i> : <i onClick={()=>addToWishlist(product)} class="fa-regular fa-heart"></i>}
         </div>
     )

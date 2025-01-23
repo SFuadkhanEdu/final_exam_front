@@ -5,7 +5,7 @@ import { useBasketContext } from '../../context/BasketContext'
 function BasketCard({product}) {
     const {addToBasket,isInBasket,reduceFromBasket,deleteFromBasket,basket,setBasket} = useBasketContext()
   return (
-    <div class="d-flex card align-items-center justify-content-center" style={{width: "18rem"}}>
+    <div class="bas_card d-flex card align-items-center justify-content-center" style={{width: "18rem"}}>
   <img src={product.img} class="card-img-top" alt="..."/>
   <div class="card-body d-flex flex-column align-items-center">
     <h5 class="card-title">{product.title}</h5>
