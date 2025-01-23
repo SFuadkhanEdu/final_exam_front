@@ -12,7 +12,7 @@ function BasketPage() {
     </Helmet>
     <div className="row">
         {}
-        {basket ? basket.map(item=><BasketCard product={item}/>) : <h1 style={{textAlign:"center", padding:"3rem 0"}}>BASKET IS EMPTY</h1>}
+        {basket.length>0 ? basket.map(item=><BasketCard product={item}/>) : <h1 style={{textAlign:"center", padding:"3rem 0"}}>BASKET IS EMPTY</h1>}
     </div>
     </>
   )
