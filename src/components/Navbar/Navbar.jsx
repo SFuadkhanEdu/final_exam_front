@@ -13,9 +13,9 @@ function Navbar() {
                     <NavLink to={"/products"}><li>HOME</li></NavLink>
                     <NavLink to={"/products/basket"}><li>BASKET</li></NavLink>
                     <NavLink to={"/products/wishlist"}><li>WISHLIST</li></NavLink>
-                    <NavLink><li><i class="fa-brands fa-facebook"></i></li></NavLink>
-                    <NavLink><li><i class="fa-brands fa-twitter"></i></li></NavLink>
-                    <NavLink><li><i class="fa-brands fa-instagram"></i></li></NavLink>
+                    <><li><i class="fa-brands fa-facebook"></i></li></>
+                    <><li><i class="fa-brands fa-twitter"></i></li></>
+                    <><li><i class="fa-brands fa-instagram"></i></li></>
                 </ul>
             </div>
             <div className="nav_toggle_div">

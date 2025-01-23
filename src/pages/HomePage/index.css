@@ -9,7 +9,16 @@
     gap: 10px;
     margin-bottom: 20px;
 }
+.home_operations_div input{
+    padding-left: 10px;
+}
 .home_operations_div button{
     padding: 8px 4px;
     border: 1px solid aquamarine;
+    transition: all 500ms;
+}
+.home_operations_div button:hover{
+    padding: 8px 4px;
+    background-color:  aquamarine;
+    color: white;
 }
