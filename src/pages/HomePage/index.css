@@ -1,0 +1,15 @@
+.card_container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.home_operations_div{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.home_operations_div button{
+    padding: 8px 4px;
+    border: 1px solid aquamarine;
+}

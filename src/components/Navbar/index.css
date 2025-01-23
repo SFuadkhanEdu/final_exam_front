@@ -1,0 +1,45 @@
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+nav .nav_logo_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+nav .nav_logo_div h1{
+    font-size: 20px;
+    margin-bottom: 0;
+}
+nav .nav_logo_div img{
+    width: 40px;
+}
+nav .nav_right{
+    height: 100%;
+}
+nav .nav_toggle_div{
+    display: none;
+    align-items: center;
+    font-size: 25px;
+}
+nav .nav_right ul{
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    margin: auto 0;
+    align-items: center;
+}
+a{
+    color: black;
+}
+@media screen and (max-width:992px) {
+    nav .nav_right{
+        display: none;
+    }
+    nav .nav_toggle_div{
+        display: flex;
+    }
+}

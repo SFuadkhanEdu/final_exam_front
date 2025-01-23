@@ -1,0 +1,32 @@
+#about_us_container{
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#about_us_container h1 {
+    text-align: center !important;
+}
+#about_us_container  .card_container{
+    gap: 20px;
+}
+#about_us_container .emo_card i{
+    color: red;
+}
+#about_us_container .emo_card{
+    background-color: #F2F2F2;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 10px;
+}
+@media screen and (max-width:760px) {
+  #about_us_container  .card_container{
+    flex-direction: column;
+  }
+  #about_us_container .emo_card{
+  }
+}
